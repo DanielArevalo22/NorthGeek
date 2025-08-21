@@ -7,15 +7,17 @@ public class FacturacionDTO{
     private String cedula;
     private String apellido;
     private String celular;
+    private String fechaFactura;
 
     public FacturacionDTO() {
     }
 
-    public FacturacionDTO(String nombres, String cedula, String apellido, String celular) {
+    public FacturacionDTO(String nombres, String cedula, String apellido, String celular, String fechaFactura) {
         this.nombres = nombres;
         this.cedula = cedula;
         this.apellido = apellido;
         this.celular = celular;
+        this.fechaFactura = fechaFactura;
     }
 
     public String getNombres() {
@@ -50,6 +52,14 @@ public class FacturacionDTO{
         this.celular = celular;
     }
 
+    public String getFechaFactura() {
+        return fechaFactura;
+    }
+
+    public void setFechaFactura(String fechaFactura) {
+        this.fechaFactura = fechaFactura;
+    }
+        
     @Override
     public String toString() {
         return "FacturacionDTO{" + "nombres=" + nombres + ", cedula=" + cedula + ", apellido=" + apellido + ", celular=" + celular + '}';
